@@ -1,0 +1,133 @@
+{
+  "reportTemplates": [
+    {
+      "id": "site-assessment",
+      "name": "Site Assessment Report",
+      "description": "Standard template for assessing development sites",
+      "sections": [
+        {
+          "id": "executive-summary",
+          "title": "Executive Summary",
+          "required": true,
+          "content": "Brief overview of the site assessment findings and recommendations."
+        },
+        {
+          "id": "site-description",
+          "title": "Site Description",
+          "required": true,
+          "content": "Physical characteristics, location, and current use of the site."
+        },
+        {
+          "id": "planning-context",
+          "title": "Planning Policy Context",
+          "required": true,
+          "content": "Relevant local plan policies and national planning guidance."
+        },
+        {
+          "id": "constraints-analysis",
+          "title": "Constraints Analysis",
+          "required": true,
+          "content": "Assessment of physical and policy constraints affecting development."
+        },
+        {
+          "id": "deliverability",
+          "title": "Deliverability Assessment",
+          "required": true,
+          "content": "Viability, infrastructure, and delivery timescales."
+        },
+        {
+          "id": "recommendations",
+          "title": "Recommendations",
+          "required": true,
+          "content": "Conclusions and recommended actions."
+        }
+      ]
+    },
+    {
+      "id": "dm-report",
+      "name": "Development Management Report",
+      "description": "Template for planning application assessments",
+      "sections": [
+        {
+          "id": "proposal-description",
+          "title": "Proposal Description",
+          "required": true,
+          "content": "Description of the proposed development."
+        },
+        {
+          "id": "site-context",
+          "title": "Site and Context",
+          "required": true,
+          "content": "Site characteristics and surrounding context."
+        },
+        {
+          "id": "policy-assessment",
+          "title": "Policy Assessment",
+          "required": true,
+          "content": "Assessment against relevant planning policies."
+        },
+        {
+          "id": "consultations",
+          "title": "Consultations",
+          "required": true,
+          "content": "Summary of consultation responses and officer assessment."
+        },
+        {
+          "id": "material-considerations",
+          "title": "Material Considerations",
+          "required": true,
+          "content": "Other material planning considerations."
+        },
+        {
+          "id": "conditions",
+          "title": "Conditions and Obligations",
+          "required": false,
+          "content": "Proposed planning conditions and Section 106 obligations."
+        },
+        {
+          "id": "recommendation",
+          "title": "Recommendation",
+          "required": true,
+          "content": "Officer recommendation and reasoning."
+        }
+      ]
+    },
+    {
+      "id": "policy-review",
+      "name": "Policy Review Template",
+      "description": "Template for reviewing and updating planning policies",
+      "sections": [
+        {
+          "id": "policy-overview",
+          "title": "Policy Overview",
+          "required": true,
+          "content": "Current policy text and objectives."
+        },
+        {
+          "id": "performance-review",
+          "title": "Performance Review",
+          "required": true,
+          "content": "Assessment of policy performance and effectiveness."
+        },
+        {
+          "id": "evidence-base",
+          "title": "Evidence Base",
+          "required": true,
+          "content": "Supporting evidence and data analysis."
+        },
+        {
+          "id": "stakeholder-feedback",
+          "title": "Stakeholder Feedback",
+          "required": true,
+          "content": "Consultation responses and community input."
+        },
+        {
+          "id": "recommendations",
+          "title": "Recommendations",
+          "required": true,
+          "content": "Proposed changes and improvements."
+        }
+      ]
+    }
+  ]
+}

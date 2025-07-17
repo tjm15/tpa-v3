@@ -1,0 +1,52 @@
+{
+  "promptScaffolds": [
+    {
+      "id": "policy-interpretation",
+      "name": "Policy Interpretation",
+      "description": "Help interpret and apply planning policies",
+      "scaffold": "Analyze the following policy: {policy_text}\n\nIn the context of: {context}\n\nPlease provide:\n1. Key requirements and criteria\n2. How this applies to the situation\n3. Any flexibility or exceptions\n4. Related policies to consider\n5. Common implementation challenges"
+    },
+    {
+      "id": "site-constraints",
+      "name": "Site Constraints Analysis",
+      "description": "Assess development constraints for a site",
+      "scaffold": "Assess the development constraints for this site:\n\nSite details: {site_info}\nConstraints identified: {constraints}\nRelevant policies: {policies}\n\nPlease provide:\n1. Severity assessment of each constraint\n2. Mitigation possibilities\n3. Development implications\n4. Recommended approach\n5. Policy compliance issues"
+    },
+    {
+      "id": "application-assessment",
+      "name": "Application Assessment",
+      "description": "Evaluate planning applications against policy",
+      "scaffold": "Evaluate this planning application:\n\nApplication: {application_details}\nRelevant policies: {policies}\nConstraints: {constraints}\nConsultation responses: {consultations}\n\nPlease assess:\n1. Policy compliance\n2. Material considerations\n3. Consultation issues\n4. Recommendation rationale\n5. Conditions/obligations needed"
+    },
+    {
+      "id": "precedent-analysis",
+      "name": "Precedent Analysis",
+      "description": "Analyze planning precedents and decisions",
+      "scaffold": "Analyze these planning precedents:\n\nCurrent case: {current_case}\nPrecedents: {precedents}\nKey issues: {issues}\n\nPlease provide:\n1. Relevant precedent analysis\n2. Key similarities and differences\n3. Precedent weight and relevance\n4. How precedents inform the decision\n5. Consistency considerations"
+    },
+    {
+      "id": "policy-review",
+      "name": "Policy Review",
+      "description": "Review and update planning policies",
+      "scaffold": "Review this planning policy:\n\nCurrent policy: {current_policy}\nPerformance data: {performance_data}\nStakeholder feedback: {feedback}\nEvidence base: {evidence}\n\nPlease assess:\n1. Policy effectiveness\n2. Implementation challenges\n3. Stakeholder concerns\n4. Evidence base gaps\n5. Recommended improvements"
+    },
+    {
+      "id": "impact-assessment",
+      "name": "Impact Assessment",
+      "description": "Assess development impacts and mitigation",
+      "scaffold": "Assess the impacts of this development:\n\nDevelopment proposal: {proposal}\nBaseline conditions: {baseline}\nImpact areas: {impact_areas}\nMitigation measures: {mitigation}\n\nPlease evaluate:\n1. Impact significance\n2. Mitigation effectiveness\n3. Residual impacts\n4. Monitoring requirements\n5. Additional measures needed"
+    },
+    {
+      "id": "viability-assessment",
+      "name": "Viability Assessment",
+      "description": "Assess development viability and deliverability",
+      "scaffold": "Assess the viability of this development:\n\nDevelopment details: {development_details}\nViability information: {viability_info}\nPolicy requirements: {policy_requirements}\nMarket conditions: {market_conditions}\n\nPlease assess:\n1. Development viability\n2. Policy compliance costs\n3. Market deliverability\n4. Risk factors\n5. Recommendations for optimization"
+    },
+    {
+      "id": "consultation-summary",
+      "name": "Consultation Summary",
+      "description": "Summarize and analyze consultation responses",
+      "scaffold": "Summarize these consultation responses:\n\nConsultation responses: {responses}\nKey issues raised: {issues}\nPolicy context: {policy_context}\n\nPlease provide:\n1. Response summary by theme\n2. Key issues and concerns\n3. Policy implications\n4. Officer assessment\n5. Recommended actions"
+    }
+  ]
+}

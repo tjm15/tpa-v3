@@ -1,0 +1,89 @@
+{
+  "materialConsiderations": [
+    {
+      "category": "Heritage",
+      "considerations": [
+        "Impact on listed buildings",
+        "Conservation area character",
+        "Archaeological significance",
+        "Historic landscape value",
+        "Setting of heritage assets"
+      ]
+    },
+    {
+      "category": "Environment",
+      "considerations": [
+        "Flood risk assessment",
+        "Ecological impact",
+        "Tree preservation",
+        "Contaminated land",
+        "Air quality impacts",
+        "Noise and vibration",
+        "Light pollution"
+      ]
+    },
+    {
+      "category": "Transport",
+      "considerations": [
+        "Highway safety",
+        "Parking provision",
+        "Public transport accessibility",
+        "Cycling infrastructure",
+        "Pedestrian access",
+        "Traffic generation"
+      ]
+    },
+    {
+      "category": "Design",
+      "considerations": [
+        "Visual impact",
+        "Scale and massing",
+        "Materials and appearance",
+        "Landscaping",
+        "Boundary treatments",
+        "Accessibility compliance"
+      ]
+    },
+    {
+      "category": "Amenity",
+      "considerations": [
+        "Privacy and overlooking",
+        "Daylight and sunlight",
+        "Noise impacts",
+        "Odour impacts",
+        "Dust and construction impacts"
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "considerations": [
+        "Utilities capacity",
+        "Drainage and sewerage",
+        "Education provision",
+        "Healthcare facilities",
+        "Recreation and open space",
+        "Waste management"
+      ]
+    },
+    {
+      "category": "Economic",
+      "considerations": [
+        "Employment generation",
+        "Economic viability",
+        "Local economic impact",
+        "Tourism effects",
+        "Market conditions"
+      ]
+    },
+    {
+      "category": "Social",
+      "considerations": [
+        "Community facilities",
+        "Affordable housing",
+        "Social cohesion",
+        "Crime prevention",
+        "Equality impacts"
+      ]
+    }
+  ]
+}
