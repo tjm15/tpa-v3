@@ -20,10 +20,7 @@
   import DocumentMode from './routes/DocumentMode.svelte';
   
   // DM Mode components
-  import DMSiteAssessment from './routes/DMSiteAssessment.svelte';
-  import DMReasoning from './routes/DMReasoning.svelte';
-  import DMPrecedent from './routes/DMPrecedent.svelte';
-  import DMReport from './routes/DMReport.svelte';
+  import DMOverview from './routes/DMOverview.svelte';
   
   let showResetConfirm = false;
   let planTitle = 'Local Plan 2024';
@@ -39,10 +36,7 @@
   ];
   
   const dmModes: { id: PlanningMode; label: string }[] = [
-    { id: 'DMSiteAssessment', label: 'Site Assessment' },
-    { id: 'DMReasoning', label: 'Reasoning' },
-    { id: 'DMPrecedent', label: 'Precedent' },
-    { id: 'DMReport', label: 'Report' }
+    { id: 'DMOverview', label: 'Overview' }
   ];
   
   function handleReset() {
@@ -66,7 +60,7 @@
     if (workspace === 'PlanMaking') {
       switchMode('Policy');
     } else {
-      switchMode('DMSiteAssessment');
+      switchMode('DMOverview');
     }
   }
   
@@ -162,14 +156,8 @@
       <GoalMode />
     {:else if $currentMode === 'Document'}
       <DocumentMode />
-    {:else if $currentMode === 'DMSiteAssessment'}
-      <DMSiteAssessment />
-    {:else if $currentMode === 'DMReasoning'}
-      <DMReasoning />
-    {:else if $currentMode === 'DMPrecedent'}
-      <DMPrecedent />
-    {:else if $currentMode === 'DMReport'}
-      <DMReport />
+    {:else if $currentMode === 'DMOverview'}
+      <DMOverview />
     {/if}
   </div>
 

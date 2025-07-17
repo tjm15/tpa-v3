@@ -11,10 +11,7 @@ export type PlanningMode =
   | 'Scenario' 
   | 'Goal' 
   | 'Document' 
-  | 'DMSiteAssessment' 
-  | 'DMReasoning' 
-  | 'DMPrecedent' 
-  | 'DMReport';
+  | 'DMOverview';
 
 export type WorkspaceType = 'PlanMaking' | 'DevelopmentManagement';
 
