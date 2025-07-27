@@ -122,4 +122,4 @@ src/
 
 ## License
 
-MIT License
+AGPLv3 License
