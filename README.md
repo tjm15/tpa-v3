@@ -1,47 +1,125 @@
-# Svelte + TS + Vite
+# Planners Assistant Demo
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+A **planner-first, local-first AI assistant** that runs mostly inside the browser, leverages free/open data, and requires only a lightweight "easy login" (user-supplied API key) for optional LLM features.
 
-## Recommended IDE Setup
+## Features
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- **Local-first**: All processing happens in your browser
+- **PDF Processing**: Extract and chunk planning documents
+- **Semantic Search**: Find relevant content using local embeddings
+- **Spatial Analysis**: Analyze development sites against constraints
+- **AI Integration**: Optional Gemini API integration for enhanced Q&A
+- **No Backend Required**: Runs entirely on static hosting
 
-## Need an official Svelte framework?
+## Getting Started
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Open http://localhost:5173
 
-## Technical considerations
+## Architecture
 
-**Why use this over SvelteKit?**
+- **Frontend**: Svelte + TypeScript + Vite
+- **Storage**: Dexie (IndexedDB wrapper)
+- **PDF Processing**: PDF.js
+- **Embeddings**: Transformers.js (local inference)
+- **Vector Database**: In-memory with cosine similarity
+- **Spatial Analysis**: Turf.js
+- **Optional LLM**: Google Gemini API (user-provided key)
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+## Usage
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+### 1. Upload Planning Documents
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+- Click "Upload Plan PDF" in the Policy mode
+- Processing happens locally in your browser
+- Text is extracted, chunked, and embedded automatically
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+### 2. Search and Analyze
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- Use the search bar to find relevant policy content
+- Results are ranked by semantic similarity
+- No data leaves your browser
 
-**Why include `.vscode/extensions.json`?**
+### 3. Site Assessment
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- Switch to Site mode to analyze development sites
+- View constraints and deliverability metrics
+- Interactive mapping (placeholder for MapLibre integration)
 
-**Why enable `allowJs` in the TS template?**
+### 4. AI Questions (Optional)
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+- Add your Gemini API key in Settings
+- Ask questions about your planning documents
+- Get contextual answers with citations
 
-**Why is HMR not preserving my local component state?**
+## Development
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+```bash
+# Install dependencies
+npm install
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+# Start development server
+npm run dev
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
+
+## Deployment
+
+The app is configured for deployment to GitHub Pages:
+
+1. Push to the `main` branch
+2. GitHub Actions will automatically build and deploy
+3. Access your deployed app at `https://yourusername.github.io/repository-name`
+
+## Privacy & Security
+
+- All document processing happens locally
+- No data is sent to external servers (except optional LLM API)
+- IndexedDB storage is private to your browser
+- API keys are stored locally and never transmitted
+
+## Browser Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Requires modern browser with WebAssembly support
+
+## Technical Details
+
+### File Structure
+
+```
+src/
+├── lib/
+│   ├── db/           # Database layer (Dexie)
+│   ├── embeddings/   # Local embeddings (Transformers.js)
+│   ├── pdf/          # PDF processing (PDF.js)
+│   ├── spatial/      # Spatial analysis (Turf.js)
+│   ├── llm/          # LLM integration (Gemini)
+│   └── utils/        # Utility functions
+├── routes/           # Svelte components
+└── styles/           # CSS and styling
+```
+
+### Key Technologies
+
+- **Svelte 5**: Component framework
+- **TypeScript**: Type safety
+- **Vite**: Build tool and dev server
+- **PDF.js**: PDF text extraction
+- **Transformers.js**: Local ML inference
+- **Turf.js**: Spatial calculations
+- **Dexie**: IndexedDB wrapper
+- **Tailwind CSS**: Styling framework
+
+## License
+
+MIT License
